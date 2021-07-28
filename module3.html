@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>module 3</title>
+<link rel="stylesheet" href="CSS FILES/bootstrap.min.css">
+<link rel="stylesheet" href="CSS FILES/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+p { border: 0px solid black;
+    background-color:gray;
+    width: 98%;
+    height: 270px;
+    margin:40px;
+    margin-left:4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 35px 10px 5px 10px;
+    font-family: Arial;
+    color: black;
+}
+#container{
+  position: relative;
+}
+#p1{
+  border: 0px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left:180px;
+  right: 200px;
+  width:100px;
+  height:30px;
+  padding: 0px;
+  text-align:center;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+/** HEADER **/
+.navbar-header{
+  background-color: grey;
+  border-radius: 0px;
+  border: 0;
+  width: 100%;
+  height: 70px;
+  margin:0px;
+}
+.navbar-brand {
+  padding: 10px 0px 0px 25px;
+  font-weight: bold;
+  font-size: large;
+  color:black;
+}
+#nav-list {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-toggle{
+  position: relative;
+}
+.row{
+    max-width: 100%;
+}
+/* The desktop view */
+@media (min-width: 992px){
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/* the tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/* the mobile view */
+@media (min-width:0px) or (max-width: 767px){
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+</style>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Food, LLC</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Beef</a></li>
+            <li><a href="#">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif" align=center>Our Menu!</h2>
+      <div class="row">
+        <div><div class="col-lg-4 col-md-6" id="container"><p>lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.</p><p id="p1">Chicken</p></div></div>
+        <div><div class="col-lg-4 col-md-6" id="container"><p>lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.</p><p id="p1">Beef</p></div></div>
+        <div><div class="col-lg-4 col-md-12" id="container"><p>lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.lorem ipsum dolor sit amet,consectetur adipising elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco lboris nisi ut aliquip ex ea commodo consequat.</p><p id="p1">Sushi</p></div></div>
+      </div></div>
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="CSS FILES/jquery-2.1.4.min.js"></script>
+  <script src="CSS FILES/bootstrap.min.js"></script>
+  <script src="CSS FILES/script.js"></script>
+  </body>
+  </html>
+  
